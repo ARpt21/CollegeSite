@@ -1,0 +1,340 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@350&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet"> 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("cllg_bmg4.jpg");
+  background-size: contain;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 1450px;
+  height: 300px;
+  position: absolute; 
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.btn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  background-color: #dc143c;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 10px 30px;
+  cursor: pointer;
+  width: 1450px;
+  font-size: 18px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+    .btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 1450px;
+  height: 300px;
+  margin: 30px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(-180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front { 
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px;
+  color: white;
+}
+
+.flip-card-back {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  color: white;
+  transform: rotateX(180deg);
+}
+
+.heading-back {
+  padding: 10px;
+}
+
+.main-heading{
+  text-align: center;
+  color: #dc143c;
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-family: 'Asul', sans-serif ;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+.heading {
+  padding: 40px;
+}
+
+</style>
+</head>
+<body>
+
+
+  <div class="main-heading">  
+    <p> College &nbsp; Clubs </p>
+    </div> 
+
+  <div class="flip-card">
+    <div class="flip-card-inner">  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(dsc-itm.jpg); background-size: contain;"> 
+      
+      <div class="heading" style="color: black;">
+      <h1>DSC-ITM Club</h1>
+      <p><u><b>FOR:</u> Coding , Placements , Projects </b></p>
+    </div>
+
+      </div> 
+    </div>
+  
+  <div class="flip-card-back" style="background-image: url(6d.jpg); background-size: cover;">
+
+    <div class="heading-back">
+    <p><b>Head Member :</b></p>
+    <p>Lovneesh Dhir (3rd Yr)</p>
+    <p><b>Members :</b></p>
+    <p>Anshita Varyani (3rd Yr) &nbsp;&nbsp; Shibam Dhar (2nd Yr) </p>
+    <p>Anushka Gautam (3rd Yr) &nbsp;&nbsp; Naman Mehrotra (2nd Yr) </p>
+    <p>Kartik Manchanda (3rd Yr) &nbsp;&nbsp; Deepanshu Sisodiya (2nd Yr) </p>
+    <p>Kunal Manchanda (3rd Yr)  </p>
+    <p>Adnan Karim (3rd Yr)  </p>
+  </div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
+<button type="submit" class="btn"><a href="https://in.linkedin.com/company/dsc-kccitm" style="color: white;"><span>To Join , Visit Website</span></a></button>
+
+<div class="flip-card">
+  <div class="flip-card-inner">  
+<div class="flip-card-front">
+<div class="card" style="background-image: url(acmitm.jpg); background-size: contain;"> 
+    
+    <div class="heading">
+    <h1>ACM-ITM Club</h1>
+    <p><b><u>FOR:</u> Coding , Placements , Projects </b></p>
+  </div>
+
+    </div> 
+  </div>
+
+<div class="flip-card-back" style="background-image: url(6d.jpg); background-size: cover;">
+
+  <div class="heading-back">
+  <p><b>Head Member :</b></p>
+  <p>Shibam Dhar (2nd Yr)</p>
+  <p><b>Members :</b></p>
+  <p>Adnan Karim (3rd Yr)</p>
+  <p>Shreya Gupta (3rd Yr)</p>
+  <p>Khateeb Anwer (3rd Yr)</p>
+  <p>Rishabh Gupta (3rd Yr)</p>
+  <p>Naman Mehrotra (4th Yr)</p>
+</div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+  <button type="submit" class="btn"><a href="http://kccitm.acm.org/team.html" style="color: white;"><span>To Join , Visit Website</span></a></button>
+
+  <div class="flip-card">
+    <div class="flip-card-inner">  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(music2.jpg); background-size: contain;"> 
+      
+      <div class="heading">
+      <h1>Music Club</h1>
+      <p><u><b>FOR:</u> Singing(Solo,Duet,Group) </b></p>
+      <p><b> Music Instruments Player(Guitar,Drum etc) </b></p>
+    </div>
+
+      </div> 
+    </div>
+  
+  <div class="flip-card-back" style="background-image: url(6d.jpg); background-size: cover;">
+
+    <div class="heading-back">
+    <p><b>Head Member :</b></p>
+    <p>Adnan Karim (3rd Yr)</p>
+    <p><b>Members :</b></p>
+    <p>Nitesh Gupta (3rd Yr)</p>    
+  </div>
+
+  </div>
+      </div>
+    </div>
+  </div>
+
+<button class="btn"><span>To Join , Contact Us at 12345678910</span></button>
+
+<div class="flip-card">
+  <div class="flip-card-inner">  
+<div class="flip-card-front">
+<div class="card" style="background-image: url(dance.jpg); background-size: contain;"> 
+    
+    <div class="heading">
+    <h1>Dance Club</h1>
+    <p><u><b>FOR:</u> Solo , Duet , Group </b></p>
+  </div>
+
+    </div> 
+  </div>
+
+<div class="flip-card-back" style="background-image: url(6d.jpg); background-size: cover;">
+
+  <div class="heading-back">
+  <p><b>Head Member :</b></p>
+  <p>Lokesh Goyal (3rd Yr)</p>
+  <p><b>Members :</b></p>
+  <p>Kunal Manchanda (3rd Yr) &nbsp;&nbsp; Shivam (3rd Yr)</p>
+  <p>Kartik Manchanda (3rd Yr) &nbsp;&nbsp; Pariyanka (3rd Yr)</p>
+  <p>Ankur Chauhan (3rd Yr) &nbsp;&nbsp; Niranjan Kumar (3rd Yr)</p>
+  <p>Anurag Singh (3rd Yr) &nbsp;&nbsp; Parul Tholia (3rd Yr)</p>
+  <p>Manvi Jain (3rd Yr)</p>
+</div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+<button class="btn"><span>To Join , Contact Us at 12345678910</span></button>
+
+<div class="flip-card">
+  <div class="flip-card-inner">  
+<div class="flip-card-front">
+<div class="card" style="background-image: url(drama.jpg); background-size: contain;"> 
+    
+    <div class="heading">
+    <h1>Drama Club</h1>
+    <p><b><u>FOR:</u> Theatres , Plays etc </b></p>
+  </div>
+
+    </div> 
+  </div>
+
+<div class="flip-card-back" style="background-image: url(6d.jpg); background-size: cover;">
+
+  <div class="heading-back">
+  <p><b>Head Member :</b></p>
+  <p>Pranjali Gupta (3rd Yr)</p>
+  <p><b>Members :</b></p>
+  <p>Ansh Goel (3rd Yr) &nbsp;&nbsp; Piyush (2nd Yr)</p>
+  <p>Simran Suri (3rd Yr) &nbsp;&nbsp; Pankaj (2nd Yr)</p>
+  <p>Sameer (3rd Yr) &nbsp;&nbsp; Stefy (2nd Yr)</p>
+  <p>Arusha (2nd Yr) &nbsp;&nbsp; Altmash (3rd Yr)</p>
+  <p>Suman (2nd Yr)</p>
+</div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+<button class="btn"><span>To Join , Contact Us at 12345678910</span></button>
+
+<div class="flip-card">
+  <div class="flip-card-inner">  
+<div class="flip-card-front">
+<div class="card" style="background-image: url(fashion2.jpg); background-size: contain;"> 
+    
+    <div class="heading">
+    <h1>Fashion Club</h1>
+    <p><b><u>FOR:</u> Ramp Walk </b></p>
+  </div>
+
+    </div> 
+  </div>
+
+<div class="flip-card-back" style="background-image: url(6d.jpg); background-size: cover;">
+
+  <div class="heading-back">
+  <p><b>Head Member :</b></p>
+  <p>Priyanka (3rd Yr)</p>
+  <p><b>Members :</b></p>
+  <p>Falguni (3rd Yr) &nbsp;&nbsp; Manvi Jain (3rd Yr) &nbsp;&nbsp; Akshata Sarde (2nd Yr)</p>
+  <p>Kunal Manchanda (3rd Yr) &nbsp;&nbsp; Shagun (2nd Yr) &nbsp;&nbsp; Nehal Thakur (3rd Yr)</p>
+  <p>Kartik Manchanda (3rd Yr) &nbsp;&nbsp; Priyanka (3rd Yr) &nbsp;&nbsp; Dhruv (3rd Yr)</p>
+  <p>Ankur Chauhan (3rd Yr) &nbsp;&nbsp; Renesa (2nd Yr)&nbsp;&nbsp; Tripti (3rd Yr)</p>
+  <p>Anurag Singh (3rd Yr) &nbsp;&nbsp; Parul Tholia (3rd Yr) &nbsp;&nbsp; Niranjan Kumar (3rd Yr)</p>
+</div>
+
+</div>
+    </div>
+  </div>
+</div>
+
+<button class="btn" ><span>To Join , Contact Us at 12345678910</span></button>
+
+
+
+</body>
+</html>

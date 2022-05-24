@@ -1,0 +1,166 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@450&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91687f447e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet">
+    
+<style>
+
+body{
+    background-image: url(job.jpeg);
+    background-size: contain;
+    font-family: 'Quicksand', sans-serif;    
+}
+
+.box{
+    font-size: 20px;
+    background-color:rgb(255, 228, 196, 0.9);
+    width: 35%;
+    padding:10px ;
+    margin-left: 5px;    
+    }
+
+    .btn {
+    background-color: rgba(211, 63, 63, 0.897);
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin: auto;      
+      font-size: 15px;
+      width: 100%;     
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+h1{
+  font-family: 'Asul', sans-serif ;
+  font-size: 55px;
+  color: #5DADE2 ;
+}
+
+input[type=text],
+select,
+textarea {
+height: 5%;
+width: 100%;
+padding: 5px;
+border: 1px solid rgba(211, 63, 63, 0.897);
+text-transform: capitalize;
+}
+ 
+</style>
+</head>
+<body>
+  <script>
+    function submit (){
+      document.getElementById("csrf-form").submit();
+      alert("form submitted");
+    }
+  </script> 
+<div class="box">
+<h1><center>Job Application <br>Form</center></h1>
+<iframe style="display: none;" name="csrf-frame"></iframe>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd2PiIS_q1B9h1XecQvgyFTdNhYiG9WKJGdwD7CYXz5Fkmg4A/formResponse" target="csrf-frame" id="csrf-form">
+<p>
+Name of person : 
+<br><input type="text" name="entry.933693987" placeholder ="Your Answer...">
+</p>
+<p>
+Email-id :
+<br><input type="text" name="entry.1822771275" placeholder ="Your Answer...">
+</p>
+<p>
+Contact No. :
+<br><input type="text" name="entry.1098165036" placeholder ="Your Answer...">
+</p>
+<p>
+Current Location/Dist. :
+<br><input type="text" name="entry.1167032320" placeholder ="Your Answer...">
+</p>
+<p>
+State :
+<br><input type="text" name="entry.866911835" placeholder ="Your Answer...">
+</p>
+<p>
+Total experience<br> (excluding the period of full<br> time Ph.D) :
+<br><input type="text" name="entry.55202275" placeholder ="Your Answer...">
+</p>
+<p>
+Ph.D. :
+<br><select name="entry.990648218" id="Ph.D.">
+<option value="No">No</option>
+<option value="Pursuing">Pursuing</option>
+<option value="Pre-submission">Pre-submission</option>
+<option value="Thesis submitted">Thesis submitted</option>
+<option value="Awarded">Awarded</option>
+</select>
+</p>
+<p>
+Mode of Ph.D :
+<br><select name="entry.165122971" id="Mode of Ph.D">
+<option value="No">Full time</option>
+<option value="Part time">Part time</option>
+<option value="N.A">N.A</option>
+</select>
+</p>
+<p>
+Year of Completion (Ph.D) :
+<br><input type="text" name="entry.1525639616" placeholder="Your answer">
+</p>
+<p>
+University (Ph.D.) :
+<br><input type="text" name="entry.1375594667" placeholder="Your answer">
+</p>
+<p>
+Master's Degree :
+<br><input type="text" name="entry.1805848058" placeholder="Your answer">
+</p>
+<p>
+Year of Completion :
+<br><input type="text" name="entry.1007594299" placeholder="Your answer">
+</p>
+<p>
+University (Master's Degree) :
+<br><input type="text" name="entry.1160528995" placeholder="Your answer">
+</p>
+<p>
+Resume Link:
+<br><input type="Text" name="entry.1761059840" placeholder="URL">
+    <center>Upload file</center>
+</p>
+
+</form>
+
+<button type="submit" class="btn" onclick="submit()" ><span>Submit</span></button>
+<p>
+        
+</p>
+</div>
+
+</body>
+</html>

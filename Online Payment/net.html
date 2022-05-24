@@ -1,0 +1,191 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  padding: 30px 65px;
+   background-image: url(Internet-banking2.jpeg);
+   background-size: cover;    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+
+  }
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color:rgba(255, 255, 255, 0.7);
+  padding: 20px ;
+  border: 2px solid rgb(180, 7, 7) ;
+  color: rgb(180, 7, 7);
+  width: 30%;
+  
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(180, 7, 7) ;
+  border-radius: 3px;
+}
+
+input[type=text]:focus {
+      background-color: #ddd;
+      outline: 2px solid rgb(180, 7, 7);
+      
+    }
+    
+
+label {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  display: block;
+  font-family: Microsoft JhengHei UI;
+  color: rgb(180, 7, 7);
+}
+
+.label1 {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  display: block;
+  font-family: Microsoft JhengHei UI;
+  color: white;
+  font-weight: bold;
+  font-size: 18.5px;
+}
+
+
+.btn {
+    background-color: rgb(180, 7, 7);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-family: Microsoft JhengHei UI;
+      font-size: 20px;
+      width: 30%;     
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+  
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;  
+}
+
+.p1 {
+  font-size: 30px;
+  font-family: Microsoft JhengHei UI;
+  font-weight: 600;
+}
+
+.g-recaptcha{
+   margin-top: 20px;
+   
+    background-color:rgba(255, 255, 255, 0.7);
+  padding: 20px 20px 20px 50px;
+  width: 30%;
+  border: 2px solid darkred ;
+  border-radius: 3px;
+  color: darkred;
+
+}
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+ 
+
+}
+</style>
+</head>
+<body>
+
+<div class="bg_image">
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      
+      
+          <div class="col-50">
+            <div class="p1">
+            <p style="text-align: center;">NetBanking<br> Details</p>
+          </div>
+            <div style="background-image: url('img_girl.jpg');">
+</div>
+            <label for="cname">Username :</label>
+            <input type="text" id="cname" name="cardname" placeholder="Rajesh Kumar">
+            <label for="ccnum">Password :</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="*******">
+          </div>
+          
+        </div>
+        <div class="g-recaptcha" data-sitekey="WEBSITEKEYHERE" data-theme="dark" data-size="normal" data-image="image"></div>
+         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+   
+         <div class="label1">
+          <p>
+            <input type="checkbox" checked="checked" name="sameadr"> Accepting all terms & conditions.
+          </p>
+        </div>
+        <button type="submit" class="btn"><span>Continue to Checkout</span></button>
+    <div style="background-image: url('shutterstock_141456001.jpg');">
+	</div>
+	</form>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<html>
+<head>
+<style>
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: left;
+  margin: 16px 16px ;
+  position: relative;
+}
+
+img.avatar {
+  width: 50%;
+  height: 85%;
+  padding: 10px 40px;
+}
+
+.container {
+  padding: 1px 15px;
+  background-color:rgba(0,0,0,0.65) ;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: url("m8.png");
+  background-size: 100% 100%;
+  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid rgb(180, 7, 7);
+  width: 80%; /* Could be more or less, depending on screen size */
+  
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 55px;
+  font-weight: 500px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.heading1 {
+    color: rgb(255, 33, 33);
+    font-size: 18px;
+    font-family: Impact;
+}
+
+.heading2 {
+    color: white;
+    font-size: 18px;
+    font-family: Segoe UI;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Noida</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d112185.06331197453!2d77.35674713463726!3d28.516168941740506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x390ce5cac72721a1%3A0xb0013a8b3a1fab52!2sBotanical%20Garden%20Metro%20Station%2C%20Sector%2038%2C%20Noida%2C%20Uttar%20Pradesh!3m2!1d28.56394!2d77.333457!4m5!1s0x390cea74a8966417%3A0xd8d16b92f048cd1e!2sKCC%20INSTITUTE%20OF%20TECHNOLOGY%20%26%20MANAGEMENT%2C%20Knowledge%20Park%20III%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201310!3m2!1d28.4707682!2d77.4938572!5e0!3m2!1sen!2sin!4v1653330536161!5m2!1sen!2sin"
+      frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="60%" height="65%">
+      </iframe>
+      <img src="Metro_Noida .png" width="30%" height="63%" hspace="30">
+      
+    </div>
+
+    
+
+    <div class="container" >
+
+      <div class="heading1">
+      <p>Starting Metro Station : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Destination Metro Station :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fare : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estimated Time : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stations Interchange : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stations Covered :</p>
+    </div>
+
+    <div class="heading2">
+      <p>Botanical Garden &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Knowledge Park - 2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹ 60 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 57 min &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21</p>
+    </div>
+
+    </div>
+    
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

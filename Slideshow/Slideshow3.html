@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ 
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 80%;
+  
+}
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: 28%;
+  padding: 14px;
+  margin-left: 0px;
+  margin-top: 0px;
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0.2em;
+  border-width: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 14px;
+  margin-right: 0px;
+  margin-top: 0px;
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0.2em;
+  border-width: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.2em;
+}
+
+.prev:hover{
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover {
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:#bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+} 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from{
+opacity: 0.4;
+}
+to{
+opacity: 1;
+}
+}
+@keyframes fade {
+  from {opacity: 0.4;
+  }
+  to {opacity: 1;
+  }
+}
+</style>
+<body>
+
+<div class="container">
+  <div class="mySlides">
+    <img src="sl1.jpg" width="654" height="500" class="center">
+  </div>
+
+  <div class="mySlides">
+    <img src="sl2.jpg" width="654" height="500" class="center">
+  </div>
+
+  <div class="mySlides">
+    <img src="sl3.jpg" width="654" height="500" class="center">
+  </div>
+    
+  <div class="mySlides">
+    <img src="sl4.jpg" width="654" height="500" class="center">
+  </div>
+
+  <div class="mySlides">
+    <img src="sl5.jpg" width="654" height="500" class="center">
+  </div>
+    
+  <div class="mySlides">
+    <img src="sl6.jpg" width="654" height="500" class="center">
+  </div>
+
+  <div class="mySlides">
+    <img src="sl7.jpg" width="654" height="500" class="center">
+  </div>
+
+  <div class="mySlides">
+    <img src="sl8.jpg" width="654" height="500" class="center">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  <br/>
+  <div style='text-align: center;'>
+    <span class="dot" onclick='currentSlide(1)'></span>
+    <span class="dot" onclick='currentSlide(2)'></span>
+    <span class="dot" onclick='currentSlide(3)'></span>
+    <span class="dot" onclick='currentSlide(4)'></span>
+    <span class="dot" onclick='currentSlide(5)'></span>
+    <span class="dot" onclick='currentSlide(6)'></span>
+    <span class="dot" onclick='currentSlide(7)'></span>
+    <span class="dot" onclick='currentSlide(8)'></span>
+  </div>
+</div>
+<script>
+ var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 2400);
+  
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+   
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 2400);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)},2400);
+  }
+}
+
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 2400);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 2400);
+}
+    </script>
+  
+  </body>
+  </html>

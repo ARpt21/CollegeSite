@@ -1,0 +1,431 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@350&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet">   
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("cllge_canteen.jpg");
+  background-size: contain;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 380px;
+  padding: 10px;
+  margin:10px 20px ;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0px -10px;
+padding-left: 140px ;
+padding-right: 20px ;
+padding-bottom: 0px ;
+padding-top: 20px ;}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 380px;
+  position: absolute;
+  height: 450px; 
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  
+  color: #36454f;
+  position: relative;
+  font-family: 'Yatra One', cursive;
+  font-size: 25px;
+  text-align: center;
+  width: auto;
+  height: 150px;
+  margin-top: 270px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: rgb(255, 255, 255, 0.75);
+}
+.btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #dc143c;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 1px auto;
+  cursor: pointer;
+  width: 95%;
+  font-size: 18px;
+}
+
+
+h2 {
+    padding: 3px 1px 1px 1px;
+}
+
+.flip-card-back {
+  background-image: url("g1.jpg");
+  background-size: 400px 450px;
+  background-repeat: no-repeat;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 380px;
+  height: 450px;
+  perspective: 1000px;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-family: 'Asul', sans-serif ;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="heading">  
+<p>Today's &nbsp;Menu</p>
+</div> 
+
+<div class="row">
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+      
+      <div class="flip-card-front">
+      <div class="card" style="background-image: url(Aloo_parantha.jpg); background-size: cover;"> 
+        <div class="container">     
+          <h2>Aloo Paranthe</h2>
+          <button type="submit" class="btn"><span> Rs. 25 </span></button>
+          </div> 
+        </div>
+      </div>
+      <div class="flip-card-back">
+      </div>
+          </div>
+        </div>
+      </div>
+    
+
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+    
+    <div class="flip-card-front">
+    <div class="card" style="background-image: url(biscuits.jpg); background-size: auto 400px;"> 
+      <div class="container">     
+        <h2>Biscuits</h2>
+        <button type="submit" class="btn"><span> M.R.P. </span></button>
+        </div> 
+      </div>
+    </div>
+    <div class="flip-card-back" style="background-image: url(ng1.jpg); background-size: 400px 450px;">
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+    
+    <div class="flip-card-front">
+    <div class="card" style="background-image: url(Bread_Pakora.jpg); background-size: auto 550px;"> 
+      <div class="container">     
+        <h2>Bread Pakora</h2>
+        <button type="submit" class="btn"><span> Rs. 10 </span></button>
+        </div> 
+      </div>
+    </div>
+    <div class="flip-card-back">
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+    
+    <div class="flip-card-front">
+    <div class="card" style="background-image: url(Chilly_Potato.jpg); background-size: cover;"> 
+      <div class="container">     
+        <h2>Chilly Potato</h2>
+        <button type="submit" class="btn"><span> Rs. 40 </span></button>
+        </div> 
+      </div>
+    </div>
+    <div class="flip-card-back">
+    </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+      
+      <div class="flip-card-front">
+      <div class="card" style="background-image: url(Chips.jpg); background-size: cover;"> 
+        <div class="container">     
+          <h2>Chips</h2>
+          <button type="submit" class="btn"><span> M.R.P. </span></button>
+          </div> 
+        </div>
+      </div>
+      <div class="flip-card-back">
+      </div>
+          </div>
+        </div>
+      </div>
+    
+  
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+      
+      <div class="flip-card-front">
+      <div class="card" style="background-image: url(Chole_Bhature.jpg); background-size: auto 350px;"> 
+        <div class="container">     
+          <h2>Chole Bhature</h2>
+          <button type="submit" class="btn"><span> Rs. 40 </span></button>
+          </div> 
+        </div>
+      </div>
+      <div class="flip-card-back">
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+      
+      <div class="flip-card-front">
+      <div class="card" style="background-image: url(Coffee.jpg); background-size: cover;"> 
+        <div class="container">     
+          <h2>Coffee</h2>
+          <button type="submit" class="btn"><span> Rs. 20 </span></button>
+          </div> 
+        </div>
+      </div>
+      <div class="flip-card-back">
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+      
+      <div class="flip-card-front">
+      <div class="card" style="background-image: url(Cold_Drinks.jpg); background-size: cover;"> 
+        <div class="container">     
+          <h2>Cold drinks</h2>
+          <button type="submit" class="btn"><span> M.R.P. </span></button>
+          </div> 
+        </div>
+      </div>
+      <div class="flip-card-back">
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+    
+    <div class="flip-card-front">
+    <div class="card" style="background-image: url(Paneer_Parantha.jpg); background-size: cover;"> 
+      <div class="container">     
+        <h2>Panner Parantha </h2>
+        <button type="submit" class="btn"><span> Rs. 30 </span></button>
+        </div> 
+      </div>
+    </div>
+    <div class="flip-card-back">
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(Pasta.jpg); background-size: cover;"> 
+    <div class="container">     
+      <h2>Pasta</h2>
+      <button type="submit" class="btn"><span> Rs. 40 </span></button>
+      </div> 
+    </div>
+  </div>
+  <div class="flip-card-back">
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(Samosa.jpg); background-size: contain;"> 
+    <div class="container">     
+      <h2>Samosa</h2>
+      <button type="submit" class="btn"><span> Rs. 10 </span></button>
+      </div> 
+    </div>
+  </div>
+  <div class="flip-card-back">
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(Shakes.jpg); background-size: cover;"> 
+    <div class="container">     
+      <h2>Shakes</h2>
+      <button type="submit" class="btn"><span> Rs. 30 </span></button>
+      </div> 
+    </div>
+  </div>
+  <div class="flip-card-back">
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(Tea.jpg); background-size: cover;"> 
+    <div class="container">     
+      <h2>Tea</h2>
+      <button type="submit" class="btn"><span> Rs. 10 </span></button>
+      </div> 
+    </div>
+  </div>
+  <div class="flip-card-back">
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="column">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+  
+  <div class="flip-card-front">
+  <div class="card" style="background-image: url(Veg_Roll.jpg); background-size: cover;"> 
+    <div class="container">     
+      <h2>Veg. Roll </h2>
+      <button type="submit" class="btn"><span> Rs. 30 </span></button>
+      </div> 
+    </div>
+  </div>
+  <div class="flip-card-back">
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

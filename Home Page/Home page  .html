@@ -1,0 +1,906 @@
+ <html>
+<head>
+  <script src="https://kit.fontawesome.com/91687f447e.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@350&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet">
+<style>
+
+.footer {
+   position: absolute;
+   left: 0px;
+   bottom: -240%;
+   width: 100%;
+   background-image: url(2d.jpg);
+   background-size: cover;
+   font-family: Segoe UI;
+   color: rgb(196, 196, 196);
+}
+
+.main-content{
+   display: flex;
+   padding: 2px 40px;
+}
+
+.main-content .box{
+   flex-basis: 50%;
+   margin: 10px 0 0 0;
+}
+
+.box h3{
+   font-size: 1.12rem;   
+}
+
+h3{
+   color: white;
+   text-decoration: none;
+}
+
+ul{
+   list-style-type: disk;
+}
+
+li{
+   color: rgb(211, 63, 63);
+}
+
+a:link {
+  color: rgb(196, 196, 196); 
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(196, 196, 196);
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(196, 196, 196);  
+  text-decoration: none;
+}
+
+.fa {
+  padding: 16px;
+  font-size: 27px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 5px;
+  margin-left: -240px;
+  margin-right: 80px;
+  margin-top: 30px;
+  margin-bottom: -25px;
+  border-radius: 50%;
+}
+
+.fa-facebook:hover {
+   background: #3B5998;
+}
+
+.fa-twitter:hover {
+   background: #55ACEE;
+}
+
+.fa-linkedin:hover {
+   background: #007bb5;
+}
+
+.fa-youtube:hover {
+   background: #bb0000;
+}
+
+.fa-instagram:hover {
+   background: #125688;
+}
+
+.fa-pinterest:hover {
+   background: #cb2027;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+ 
+    body {
+      margin-top: 25;
+      margin-left: 0;
+      margin-right: 0;
+      font-family: impact;
+      background-image: url(cllg_bmg.jpg);
+      background-size: cover;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.085);   
+    }
+    
+    .topnav a {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px 30px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+        
+.navbar a {
+  float: left;
+  font-size: 16px;
+  
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 16px;
+  background-color: inherit;
+  font-family: impact;
+  margin: 5;
+}
+
+.dropbtn:hover {
+  background-color: rgb(228, 56, 56);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(228, 56, 56);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 15px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.heading {
+  text-align: center;
+  color: #dc143c;
+  font-size: 80px;
+  letter-spacing: 1px;
+  font-family: 'Asul', sans-serif ;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  background-size: contain;
+}
+
+.container {
+  position: relative;
+  
+}
+
+.mySlides {
+  display: none;
+  
+}
+
+.cursor {
+  cursor: pointer;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 60%;
+  
+}
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 7.5%;
+  width: 28%;
+  padding: 14px;
+  margin-left: 0px;
+  margin-top: 0px;
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0.2em;
+  border-width: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 14px;
+  margin-right: 0px;
+  margin-top: 0px;
+  color:white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0.2em;
+  border-width: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 20%;
+  border-radius: 0.2em;
+}
+
+.prev:hover{
+  width: 3%;
+  left: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover {
+  width: 2%;
+  right: 20%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:#bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+} 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+from{
+opacity: 0.4;
+}
+to{
+opacity: 1;
+}
+}
+@keyframes fade {
+  from {opacity: 0.4;
+  }
+  to {opacity: 1;
+  }
+}
+.sticky-container{
+		
+		padding: 0px;
+		margin: 0px;
+		position: fixed;
+		right: -119px;
+		top:29%;
+		width: 200px;
+
+	}
+
+	.sticky li{
+		list-style-type: none;		
+		font-family: 'Quicksand', sans-serif;
+		height: 43px;
+		padding: 0px;
+		margin: 0px 0px 2px 0px;
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+		cursor: pointer;
+		 
+
+	}
+
+  .fb {
+		background-color:#3B5998;
+	}
+
+	.tw {
+		background-color:#55ACEE;
+	}
+
+	.inst {
+		background-color:#bc2a8d;
+	}
+
+	.li {
+		background-color:#007bb5;
+	}
+
+	.yt {
+		background-color:#bb0000;
+	}
+
+	.pi {
+		background-color:#cb2027;
+	}
+
+  a {
+		color: white;
+	}
+
+	.sticky li:hover{
+		margin-left: -115px;
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+                -webkit-filter: grayscale(0%);
+	}
+
+	.sticky li img{
+		float: left;
+		margin: 5px 5px;
+		margin-right: 10px;
+
+	}
+
+	.sticky li p{
+		padding: 0px;
+		margin: 0px;
+		text-transform: uppercase;
+		line-height: 43px;
+
+	}
+  
+.container2 {
+  height: 196px;
+  width: 105% ;
+  margin-left: -5%;
+  margin-top: 5%;
+  background-color: red;
+  background-image: url("2d.jpg");  
+}
+
+.btn1 {
+  border-radius: 50%;
+  border: 2px solid lightcoral;
+  background-color: rgb(0, 0, 0,0.1);
+  color: #dc143c;
+  padding: 28px 30px;
+  transition: 0.3s;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 350px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  border: 6px dashed #dc143c;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.btn2 {
+  border-radius: 50%;
+  border: 2px solid #87cefa;
+  background-color: rgb(0, 0, 0,0.1);
+  color: red;
+  padding: 28px 28px;
+  transition: 0.3s;
+  font-size: 45px;
+  margin: 5px 30px;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  border: 6px dashed #87cefa;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.btn3 {
+  border-radius: 50%;
+  border: 2px solid #adff2f;
+  background-color: rgb(0, 0, 0,0.1);
+  color: red;
+  padding: 28px 34px;
+  transition: 0.3s;
+  font-size: 47px;
+  margin: 5px 34px;
+  cursor: pointer;
+}
+
+.btn3:hover {
+  border: 6px dashed #adff2f;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.btn4 {
+  border-radius: 50%;
+  border: 2px solid #ff77ff;
+  background-color: rgb(0, 0, 0,0.1);
+  color: red;
+  padding: 30px 29px;
+  transition: 0.3s;
+  font-size: 45px;
+  margin: 2px 35px;
+  cursor: pointer;
+}
+
+.btn4:hover {
+  border: 6px dashed #ff77ff;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.btn5 {
+  border-radius: 50%;
+  border: 2px solid #ffd800;
+  background-color: rgb(0, 0, 0,0.1);
+  color: red;
+  padding: 30px 30px;
+  transition: 0.3s;
+  font-size: 47px;
+  margin: 5px 30px;
+  cursor: pointer;
+}
+
+.btn5:hover {
+  border: 6px dashed #ffd800;
+  background-color: white;
+  opacity: 0.9;
+}
+
+div{
+  float: center;
+}
+h1{
+  font-size: 20px;
+  margin-top: 1px;
+  margin-left: 325px;
+  color: #c0c0c0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.board {
+    width: 1450px;
+    margin: 20px;
+    height: 500px;
+    color: white;
+    background-image: url("board3.jpg");
+    color: black;
+    background-size: contain;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    border: solid 4px #dc143c;
+    padding: 10px;
+}
+
+h2 {
+    
+    margin: 10px;
+    color: #dc143c;
+    text-align: center;
+    font-family: 'Asul', sans-serif;
+}
+
+
+
+    </style>
+    </head>
+    <body>
+    
+      <div class="heading">  
+        <p>KCC - ITM &nbsp;Website</p>
+        </div>
+
+
+    <div class="topnav">
+             
+      <div class="dropdown">
+      <button class="dropbtn"><i class="far fa-envelope" style="font-size:20px; color:#cc2c2c"></i> Contact Us <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></i></button>
+      <div class="dropdown-content">
+        <a href=".././Conatct Us/Contact_Us .html">Contact Us</a>
+        <a href=".././Meet%20the%20Team/Meet_the_team%20.html">Meet the Developer's Team</a>
+        <a href=".././Job%20Hiring/job.html">Job Hiring</a>
+      </div>    
+      </div>
+      
+      <div class="dropdown">
+      <button class="dropbtn"><i class="far fa-credit-card" style="font-size:20px; color:#cc2c2c"></i> Online Payment <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></button>
+      <div class="dropdown-content">
+        <a href=".././Online%20Payment/net.html">Net Banking</a>
+        <a href=".././Online%20Payment/debitcard.html">Debit Card</a>
+        <a href=".././Online%20Payment/creditbanking.html">Credit Card</a>        
+      </div>
+      </div>
+      
+      <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-subway" style="font-size:20px; color:#cc2c2c"></i> Metro Routes <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></button>
+      <div class="dropdown-content">
+        <a href=".././Route/Metro%20Noida%20.html">Noida</a>
+        <a href=".././Route/Metro%20Delhi%20.html">Delhi</a>
+        <a href=".././Route/Metro%20Ghaziabad%20.html">Ghaziabad</a>
+      </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn"><i class="fas fa-bus-alt" style="font-size:20px; color:#cc2c2c"></i> KCC Bus Routes <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></button>
+        <div class="dropdown-content">
+          <a href=".././Route/College%20bus%20Noida%20.html">Noida</a>
+          <a href=".././Route/College%20bus%20Delhi%20.html">Delhi</a>
+          <a href=".././Route/College%20bus%20Ghaziabad%20.html">Ghaziabad</a>          
+        </div>
+        </div>
+      
+      <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-utensils" style="font-size:20px; color:#cc2c2c"></i> Canteen <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></i></button>
+      <div class="dropdown-content">
+        <a href=".././Canteen%20New/Canteen.html">Today's Menu</a>        
+      </div>
+      </div>
+      
+      <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-chalkboard-teacher" style="font-size:20px; color:#cc2c2c"></i> Teacher <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></button>
+      <div class="dropdown-content">
+        <a href=".././Portal/Teacher%20Portal.html">Teacher's Portal</a>
+      </div>
+      </div>
+      
+      <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-user-graduate" style="font-size:20px; color:#cc2c2c"></i> Student <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></button>
+      <div class="dropdown-content">
+        <a href=".././Portal/Student%20Portal.html">Student's Portal</a>       
+        <a href=".././College%20Club/College_Club%20%20.html">College Club</a>
+      </div>
+      </div>
+      
+      <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-university" style="font-size:20px; color:#cc2c2c"></i> About KCC <i class="fas fa-angle-down" style="font-size:20px; color:#cc2c2c"></i></i></button>
+      <div class="dropdown-content">
+        <a href=".././About%20Us/About_KCC_Group.html">About KCC Group</a>
+        <a href=".././About%20Us/Anti_Ragging_Policy.html">Anti-ragging Policy</a>
+        <a href=".././About%20Us/chairman.html">Chairman's Message</a>
+        <a href=".././About%20Us/Vice%20chairperson.html">Vice-chairman's Message</a>
+        <a href=".././About%20Us/kcc-mission-and-vision.html">Vission,Mission and Objective</a>
+        <a href=".././About%20Us/governing_council.html">Governing Council</a>
+      </div>
+      </div>
+
+      <div class="dropdown">
+      <button class="dropbtn"><i class="fas fa-home" style="font-size:20px; color:#cc2c2c"></i> Home</button>
+      </div>
+      <div class="container">
+        <div class="mySlides">
+          <img src="sl1.jpg" width="654" height="500" class="center">
+        </div>
+      
+        <div class="mySlides">
+          <img src="sl2.jpg" width="654" height="500" class="center">
+        </div>
+      
+        <div class="mySlides">
+          <img src="sl3.jpg" width="654" height="500" class="center">
+        </div>
+          
+        <div class="mySlides">
+          <img src="sl4.jpg" width="654" height="500" class="center">
+        </div>
+      
+        <div class="mySlides">
+          <img src="sl5.jpg" width="654" height="500" class="center">
+        </div>
+          
+        <div class="mySlides">
+          <img src="sl6.jpg" width="654" height="500" class="center">
+        </div>
+      
+        <div class="mySlides">
+          <img src="sl7.jpg" width="654" height="500" class="center">
+        </div>
+      
+        <div class="mySlides">
+          <img src="sl8.jpg" width="654" height="500" class="center">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br/>
+        <div style='text-align: center;'>
+          <span class="dot" onclick='currentSlide(1)'></span>
+          <span class="dot" onclick='currentSlide(2)'></span>
+          <span class="dot" onclick='currentSlide(3)'></span>
+          <span class="dot" onclick='currentSlide(4)'></span>
+          <span class="dot" onclick='currentSlide(5)'></span>
+          <span class="dot" onclick='currentSlide(6)'></span>
+          <span class="dot" onclick='currentSlide(7)'></span>
+          <span class="dot" onclick='currentSlide(8)'></span>
+        </div>
+      </div>
+                    
+    </div>
+    <div class="container2">
+
+      <button onclick="window.location.href='https://www.kccitm.edu.in/programs';" class="btn1"><i class="fas fa-search" style="color: #dc143c;"></i></button>
+      <button onclick="window.location.href='https://www.kccitm.edu.in/about-us/governing-council';" class="btn2"><i class="fas fa-users" style="color: #87cefa;"></i></button>
+      <button onclick="window.location.href='https://www.kccitm.edu.in/scholarship/';" class="btn3"><i class="fas fa-user-graduate" style="color: #adff2f;"></i></button>
+      <button onclick="window.location.href='.././Conatct%20Us/Contact%20Us%20.html';" class="btn4"><i class="fas fa-map-marked-alt" style="color: #ff77ff;"></i></button>
+      <button onclick="window.location.href='https://www.kccitm.edu.in/training-placement/about-placement-cell';" class="btn5"><i class="fas fa-briefcase" style="color: #ffd800;"></i></button>
+      
+      <div>
+      <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;FIND <br>&nbsp;&nbsp;&nbsp;&nbsp;PROGRAMME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LEADERSHIP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SCHOLARSHIP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CONTACT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PLACEMENTS</h1>
+      </div>
+      
+      </div>
+      <div class="board">
+        
+        <h2>Notice Board</h2>
+    
+    <p><b> - For 2nd Year : Today's 5th period will be Games period instead of ESE lecture </b></p>
+    <p><b> - Today Games Room will be open after 12:00 pm </b></p>
+    <p><b> - For 3rd Year : Today's 2nd period will be CD lecture instead of WD lecture </b></p>
+    <p><b> - Today Library will be open after 12:30 pm </b></p>
+    <p><b> - For 2nd Year : Submit your college clubs details before 5th April </b></p>
+</div>
+<div class="footer">
+  <div class="main-content">
+<div class="left box">
+  <ul>
+  <h3>ABOUT US</h3>
+<li><a href="#">Vision, Mission &amp Quality Objective</a></li>
+<li><a href="#">Management Desk</a></li>
+<li><a href="#">About KCC Group</a></li>
+<li><a href="#">Governing Council</a></li>
+<li><a href="#">Accreditations and Ranking</a></li>
+<li><a href="#">Anti Ragging Policy</a></li>
+</ul>
+</div>
+
+<div class="2 box">
+  <ul>
+  <h3>ADMISSIONS</h3>
+
+<li><a href="#">Admission Process</a></li>
+<li><a href="#">Eligibility</a></li>
+<li><a href="#">Talk to Our Admission Manager</a></li>
+<li><a href="#">Download</a></li>
+<li><a href="#">Payment Procedure</a></li>
+</ul>
+</div>
+
+<div class="3 box">
+  <ul>
+  <h3>ACADEMICS</h3>
+
+<li><a href="#">Departments</a></li>
+<li><a href="#">Academic Calendar</a></li>
+<li><a href="#">Scholarship</a></li>
+<li><a href="#">Teaching Pedagogy</a></li>
+<li><a href="#">Faculty</a></li>
+<li><a href="#">Examination</a></li>
+<li><a href="#">Center of Excellence</a></li>
+</ul>
+</div>
+
+<div class="4 box">
+  <ul>
+  <h3>PROGRAMS</h3>
+
+<li><a href="#">UG PROGRAMS (KCC ITM)</a></li>
+<li><a href="#">UG PROGRAMS (KCC ILHE)</a></li>
+<li><a href="#">GRADUATE PROGRAMS (KCC ITM)</a></li>
+
+</ul>
+</div>
+
+<div class="5 box">
+  <ul>
+  <h3>OTHER LINKS</h3>
+<li><a href="#">Placements</a></li>
+<li><a href="#">Media</a></li>
+<li><a href="#">Testimonials</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">IPU CET 2020</a></li>
+<li><a href="#">UPSEE 2020</a></li>
+<li><a href="#">Contact Us</a></li>
+<h1><a href="https://twitter.com/KCCinstitutes" class="fa fa-twitter"></a> <a href="https://www.facebook.com/KCCinstitutes/" class="fa fa-facebook"></a> </h1>
+<h1><a href="https://www.linkedin.com/school/kcc-institute-of-technology-and-management" class="fa fa-linkedin"></a> <a href="https://www.youtube.com/user/KCCInstituteNoida" class="fa fa-youtube"></a></h1>
+<h1> <a href="https://www.instagram.com/kccinstitutes/" class="fa fa-instagram"></a> <a href="https://in.pinterest.com/KCCinstitutes/_created/" class="fa fa-pinterest"></a></h1>
+</ul>
+</div>
+
+<div class="6 box">
+  <ul>
+  <h3>CAMPUS LOCATION</h3>
+
+<li>KCC Institute of Technology & Management</li>
+<p>2B-2C, Knowledge Park-III, Near Knowledge Park II Metro Station,
+Delhi-NCR Greater Noida 201306
+Phone: +9192100 65555</p>
+
+<li>KCC Institute of Legal and Higher Education
+</li>
+<p>2C, Knowledge Park III Near Knowledge Park II Metro Station,
+Delhi-NCR Greater Noida 201306
+Phone: +9192100 65555</p>
+
+<li>DELHI ADMISSION OFFICE</li>
+<p>M-78, Connaught Place,
+New Delhi, 110001
+Phone: +9192100 65555</p>
+</ul>
+</div>
+      
+      <div class="sticky-container">
+		<ul class="sticky">
+			<li>
+				<div class="fb">
+                <img width="32" height="32"  src="fb1.png" />
+				<p><a href="https://www.facebook.com/KCCinstitutes/">Facebook</a></p>
+			    </div>
+			</li>
+			<li><div class="tw">
+				<img width="32" height="32"  src="tw1.png" />
+				<p><a href="https://twitter.com/KCCinstitutes">Twitter</a></p>
+			    </div>
+			</li>
+			<li>
+				<div class="inst">
+				<img width="32" height="32"  src="instagram1.png" />
+				<p><a href="https://www.instagram.com/kccinstitutes/">Instagram</a></p>
+			    </div>
+			</li>
+			<li>
+				<div class="li">				
+				<img width="32" height="32" title="" alt="" src="li1.png" />
+				<p><a href="https://www.linkedin.com/school/kcc-institute-of-technology-and-management">Linkedin</a></p>
+			    </div>
+			</li>
+			<li>
+				<div class="yt">
+				<img width="32" height="32" title="" alt="" src="yt1.png" />
+				<p><a href="https://www.youtube.com/user/KCCInstituteNoida">Youtube</a></p>
+			    </div>
+			</li>
+			<li>
+				<div class="pi">
+				<img width="32" height="32" title="" alt="" src="pin1.png" />
+				<p><a href="https://in.pinterest.com/KCCinstitutes/_created/">Pintrest</a></p>
+			    </div>
+			</li>
+		</ul>
+	</div>
+    <script>
+      var slideIndex = 1;
+     
+     var myTimer;
+     
+     var slideshowContainer;
+     
+     window.addEventListener("load",function() {
+         showSlides(slideIndex);
+         myTimer = setInterval(function(){plusSlides(1)}, 2400);
+       
+         slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+       
+         slideshowContainer.addEventListener('mouseenter', pause)
+         slideshowContainer.addEventListener('mouseleave', resume)
+     })
+     
+     function plusSlides(n){
+       clearInterval(myTimer);
+       if (n < 0){
+         showSlides(slideIndex -= 1);
+       } else {
+        showSlides(slideIndex += 1); 
+       }
+        
+       if (n === -1){
+         myTimer = setInterval(function(){plusSlides(n + 2)}, 2400);
+       } else {
+         myTimer = setInterval(function(){plusSlides(n + 1)},2400);
+       }
+     }
+     
+     function currentSlide(n){
+       clearInterval(myTimer);
+       myTimer = setInterval(function(){plusSlides(n + 1)}, 2400);
+       showSlides(slideIndex = n);
+     }
+     
+     function showSlides(n){
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var dots = document.getElementsByClassName("dot");
+       if (n > slides.length) {slideIndex = 1}
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";
+       dots[slideIndex-1].className += " active";
+     }
+     
+     pause = () => {
+       clearInterval(myTimer);
+     }
+     
+     resume = () =>{
+       clearInterval(myTimer);
+       myTimer = setInterval(function(){plusSlides(slideIndex)}, 2400);
+     }
+         </script>
+
+    </body>
+    </html>
+    

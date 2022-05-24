@@ -1,0 +1,179 @@
+<html>
+    <head>
+
+        <script src="https://kit.fontawesome.com/91687f447e.js" crossorigin="anonymous"></script>
+        
+
+<style>
+    body, html {      
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .bg-img {
+      /* The image used */
+      background-image: url("cllge10.jpg");
+    
+      height: 100%;
+      width: 100%;
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+    
+    /* Add styles to the form container */
+    .container {
+      position: absolute;
+      right: 35%;
+      top: 5%;
+      margin: 20px;
+      max-width: 450px;      
+      padding: 40px;
+      color: rgb(187, 23, 23);
+      font-size: 20px;
+      font-family: Yu Gothic UI;
+      background-color: rgba(255, 255, 255, 0.6);
+      
+    }
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 20px;
+      margin: 20px 0 22px 0;
+      font-family: Microsoft JhengHei UI;
+      border: 2px solid rgb(211, 63, 63);
+      background: #f1f1f1;
+      font-size: 16px;
+    }
+    
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: 2px solid rgb(211, 63, 63);
+    }
+    
+    /* Set a style for the submit button */
+    .btn {
+    background-color: rgb(211, 63, 63);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-family: Microsoft JhengHei UI;
+      font-size: 20px;
+      width: 100%;     
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    .btn1{
+        background-color: rgb(30,144,255);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      
+      font-family: Microsoft JhengHei UI;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn1:hover span {
+  padding-right: 25px;
+}
+
+.btn1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ 
+         
+    h2{
+        font-size: 40px;
+        text-align: center;
+        font-weight: 500;
+        font-family: Impact;
+    }
+    
+    </style>
+    </head>
+    <body>
+        
+    <div class="bg-img">
+      <form action="cllgebg.jpg" class="container">
+        <h2><i class="fas fa-user-graduate" style="font-size:40px;color:rgb(187, 23, 23);"></i> Student Login</h2>
+    
+        <label for="name"><b>NAME : </b></label>
+        <input type="text" placeholder="Enter Student's Name" name="name" required>
+        <input type="email" id="email" placeholder="Email">
+    
+        <label for="psw"><b>PASSWORD : </b></label>
+        <!--<input type="password" placeholder="Enter Password" name="psw" required>-->
+        <input type="password" id="password" placeholder="New Password">
+    
+        <button type="submit" class="btn"><span>Login</span></button>
+        <button type="submit" class="btn1" onclick="login()"><span>Back</span></button>
+
+      </form>
+    </div>
+        
+    </body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
+
+    </html>
+    
