@@ -101,11 +101,51 @@ function dashboard(){
 function assignment(){
 
   panelWrapper.innerHTML='';
-  panelWrapper.innerHTML += `<label>Assignment Name</label> <input type="text" id='namebox'><label id="extlab"></label><br><br>
-  <label id="upprogress"></label><br><br>
+  if(staff == 0){
+    panelWrapper.innerHTML += `<label>Assignment Name</label> <input type="text" id='namebox'><label id="extlab"></label><br><br>
+    <label id="upprogress"></label><br><br>
+    
+    <button id="selbtn">Select File</button>
+    <button id="upbtn">Upload File</button> <br><br><hr>
+    <div class="panel-body">
+            <ul>
+              <li>Assignment 1 </li>
+              <li>Assignment 2 </li>
+            </ul>
+        </div>`;
+  }
+  else{const template = `
+  <div class="panel-head">
+      Student1
+  </div>
+  <div class="panel-body">
+      <ul>
+        <li><a href="#">Assignment 1 Link</a></li>
+        <li><a href="#">Assignment 2 Link</a></li>
+      </ul>
+  </div>
+  <div class="panel-head">
+      Student2
+  </div>
+  <div class="panel-body">
+      <ul>
+        <li><a href="#">Assignment 1 Link</a></li>
+        <li><a href="#">Assignment 2 Link</a></li>
+      </ul>
+  </div>
+  <div class="panel-head">
+      Student3
+  </div>
+  <div class="panel-body">
+      <ul>
+        <li><a href="#">Assignment 1 Link</a></li>
+        <li><a href="#">Assignment 2 Link</a></li>
+      </ul>
+  </div>`;
+  panelWrapper.innerHTML += template;}
   
-  <button id="selbtn">Select File</button>
-  <button id="upbtn">Upload File</button>`;
+    
+  
 
   var input = document.createElement('input');
   var namebox = document.getElementById('namebox');
@@ -155,6 +195,7 @@ async function ListUsers(){
     docSnap.docs.forEach((doc)=>{
       users.push({ ...doc.data(), id: doc.id})
     })
+    var x =1;
     users.forEach((user)=>{
         const template = `
         <div class="panel-head">
@@ -162,7 +203,20 @@ async function ListUsers(){
         </div>
         <div class="panel-body">
             ${user.name} : ${user.email}
-        </div>`;
+        </div><h1>Rating</h1>
+        <fieldset class="rating">
+        <input type="radio" id="star5_${x}" name="rating_${x}" value="5" /><label class = "full" for="star5_${x}" title="Awesome - 5 stars"></label>
+        <input type="radio" id="star4half_${x}" name="rating_${x}" value="4 and a half" /><label class="half" for="star4half_${x}" title="Pretty good - 4.5 stars"></label>
+        <input type="radio" id="star4_${x}" name="rating_${x}" value="4" /><label class = "full" for="star4_${x}" title="Pretty good - 4 stars"></label>
+        <input type="radio" id="star3half_${x}" name="rating_${x}" value="3 and a half" /><label class="half" for="star3half_${x}" title="Meh - 3.5 stars"></label>
+        <input type="radio" id="star3_${x}" name="rating_${x}" value="3" /><label class = "full" for="star3_${x}" title="Meh - 3 stars"></label>
+        <input type="radio" id="star2half_${x}" name="rating_${x}" value="2 and a half" /><label class="half" for="star2half_${x}" title="Kinda bad - 2.5 stars"></label>
+        <input type="radio" id="star2_${x}" name="rating_${x}" value="2" /><label class = "full" for="star2_${x}" title="Kinda bad - 2 stars"></label>
+        <input type="radio" id="star1half_${x}" name="rating_${x}" value="1 and a half" /><label class="half" for="star1half_${x}" title="Meh - 1.5 stars"></label>
+        <input type="radio" id="star1_${x}" name="rating_${x}" value="1" /><label class = "full" for="star1_${x}" title="Sucks big time - 1 star"></label>
+        <input type="radio" id="starhalf_${x}" name="rating_${x}" value="half" /><label class="half" for="starhalf_${x}" title="Sucks big time - 0.5 stars"></label>
+        </fieldset>`;
+        x=x+1;
         panelWrapper.innerHTML += template;
     })
   }
