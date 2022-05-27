@@ -43,7 +43,7 @@ var firebaseConfig = {
       if(snapshot.val() === 'Yes'){
         staff = 1;
         portal.innerHTML = 'Staff';
-        users.innerHTML = 'Students';
+        users.innerHTML = 'Students Rating';
       }
       else{
         portal.innerHTML = 'Student';
@@ -87,8 +87,12 @@ function dashboard(){
           <div class="panel-body">
               ${notice.msg}
           </div>`;
+          
           panelWrapper.innerHTML += template;
-      })
+      }
+      
+      )
+      
     })
   }
 
